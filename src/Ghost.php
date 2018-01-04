@@ -1,6 +1,6 @@
 <?php
 
-namespace Pem;
+namespace GhostAppleNews;
 
 function curl_get($url, array $get = NULL, array $options = array())
 {

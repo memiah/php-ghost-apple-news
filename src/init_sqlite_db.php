@@ -2,7 +2,7 @@
 
 require 'Config.php';
 
-use Pem\Config;
+use GhostAppleNews\Config;
 
 ### FUNCTIONS ###
 

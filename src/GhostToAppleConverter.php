@@ -1,6 +1,6 @@
 <?php
 
-namespace Pem;
+namespace GhostAppleNews;
 
 use \ChapterThree\AppleNewsAPI\Document;
 use \ChapterThree\AppleNewsAPI\Document\Components\Body;

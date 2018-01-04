@@ -5,10 +5,10 @@ require 'NewsPublisher.php';
 require 'GhostToAppleConverter.php';
 require 'Config.php';
 
-use \Pem\Ghost;
-use \Pem\NewsPublisher;
-use \Pem\GhostToAppleConverter;
-use \Pem\Config;
+use \GhostAppleNews\Ghost;
+use \GhostAppleNews\NewsPublisher;
+use \GhostAppleNews\GhostToAppleConverter;
+use \GhostAppleNews\Config;
 
 /**
  * Returns the last update datestr from
@@ -40,9 +40,6 @@ function run_sync() {
 	  $converter = new GhostToAppleConverter($post);
 
 		echo $converter->getJSON() . "\n";
-		echo "===========\n";
-		echo $post->markdown;
-		echo "===========\n";
 
 		# FIXME REMOVE. FOR TESTING ONLY.
 

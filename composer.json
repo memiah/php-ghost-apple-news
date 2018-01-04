@@ -1,5 +1,5 @@
 {
-    "name": "pem/memiah-ghost-news",
+    "name": "memiah/php-ghost-apple-news",
     "description": "Pulls from a Ghost API and publishes that data to Apple News",
     "authors": [
         {

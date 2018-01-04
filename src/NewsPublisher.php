@@ -1,6 +1,6 @@
 <?php
 
-namespace Pem;
+namespace GhostAppleNews;
 
 require __DIR__ . '/../vendor/autoload.php';
 
