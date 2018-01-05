@@ -8,7 +8,7 @@ function curl_get($url, array $get = NULL, array $options = array())
     CURLOPT_URL => $url. (strpos($url, '?') === FALSE ? '?' : ''). http_build_query($get),
     CURLOPT_HEADER => 0,
     CURLOPT_RETURNTRANSFER => TRUE,
-    CURLOPT_TIMEOUT => 15
+    #CURLOPT_TIMEOUT => 15
   );
 
   $ch = curl_init();

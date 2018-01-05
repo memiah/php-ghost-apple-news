@@ -1,6 +1,6 @@
 <?php
 
-namespace Pem;
+namespace GhostAppleNews;
 
 class Config {
   const SQLITE_PATH = __DIR__ . '/../db/sync.db';
@@ -14,7 +14,9 @@ class Config {
   const GHOST_SECRET = 'ghost_secret_here';
   const GHOST_ENDPOINT = 'https://actual_ghost_endpoint_here.endpoint';
 
-  const APPLE_NEWS_ENDPOINT = 'https://news-api.apple.com/';
+  const APPLE_NEWS_ENDPOINT = 'https://news-api.apple.com';
+
+  const BASE_URL = 'https://happiful.com';
 }
 
 ?>

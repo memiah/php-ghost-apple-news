@@ -39,6 +39,14 @@ class NewsPublisher {
     );
   }
 
+  public function deleteArticle($article_id) {
+    return $this->PublisherAPI->delete('/articles/{article_id}',
+      [
+        'article_id' => $article_id
+      ]
+    );
+  }
+
   public function postArticle($json, $files = []) {
     $metadata = json_encode([
       'data' => [
@@ -58,7 +66,7 @@ class NewsPublisher {
     );
   }
 
-  public function updateArticle($article_id, $revision_id, $json, $files = []) {
+  public function updateArticle($article_id, $json, $revision_id, $files = []) {
     $metadata = json_encode([
       'data' => [
         'revision' => $revision_id

@@ -17,7 +17,8 @@ function createTables($pdo) {
                     updated_at DATETIME NOT NULL,
                     article_id TEXT,
                     revision_id TEXT
-                  )'];
+                  )',
+                'INSERT INTO sys_par (name, value) VALUES (\'LAST_SYNC_DT\', \'1970-01-01T00:00:00.000Z\')'];
     // execute the sql commands to create new tables
     foreach ($commands as $command) {
         $pdo->exec($command);
@@ -34,5 +35,4 @@ $db = new SQLite3(Config::SQLITE_PATH);
 $pdo = new PDO('sqlite:' . Config::SQLITE_PATH);
 
 createTables($pdo);
-
 ?>
